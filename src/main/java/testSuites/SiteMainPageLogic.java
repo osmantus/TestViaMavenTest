@@ -27,7 +27,6 @@ public class SiteMainPageLogic {
         $$(categories).shouldHave(CollectionCondition.sizeNotEqual(0));
         $(categories)
                 .waitUntil(visible, 20)
-                .shouldBe(visible)
                 .click();
         return this;
     }
