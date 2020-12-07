@@ -4,8 +4,10 @@ import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
+import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class SiteMainPageLogic {
 
@@ -22,6 +24,7 @@ public class SiteMainPageLogic {
     }
 
     public SiteMainPageLogic categoriesCallingClick() {
+        $$(categories).shouldHave(size(1));
         $(categories)
                 .shouldBe(visible)
                 .click();

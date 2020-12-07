@@ -11,7 +11,7 @@ public class WebSiteTest {
     @BeforeMethod
     public void initTest() {
         Configuration.startMaximized = true;
-        Configuration.timeout = 30000;
+        Configuration.timeout = 10000;
         open("http://rozetka.com.ua/");
     }
 
