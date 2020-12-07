@@ -10,7 +10,7 @@ public class WebSiteTest {
 
     @BeforeMethod
     public void initTest() {
-        System.setProperty("webdriver.gecko.driver", "C:\\driver\\FirefoxDriver\\geckodriver.exe");
+        //System.setProperty("webdriver.gecko.driver", "C:\\driver\\FirefoxDriver\\geckodriver.exe");
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
         open("http://rozetka.com.ua/");
