@@ -2,8 +2,11 @@ package testSuites;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 import static com.codeborne.selenide.Selenide.open;
 
@@ -15,7 +18,10 @@ public class WebSiteTest {
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
         open("http://rozetka.com.ua/");
-        WebDriverRunner.driver().getWebDriver().manage().window().maximize();
+        WebDriver driver = WebDriverRunner.driver().getWebDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get("https://rozetka.com.ua/");
     }
 
     @Test
