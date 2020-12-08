@@ -1,6 +1,7 @@
 package testSuites;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.WebDriverRunner;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -14,6 +15,7 @@ public class WebSiteTest {
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
         open("http://rozetka.com.ua/");
+        WebDriverRunner.driver().getWebDriver().manage().window().maximize();
     }
 
     @Test
