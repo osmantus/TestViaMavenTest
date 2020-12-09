@@ -17,10 +17,10 @@ public class WebSiteTest {
         //System.setProperty("webdriver.gecko.driver", "C:\\driver\\FirefoxDriver\\geckodriver.exe");
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
-        open("http://rozetka.com.ua/");
-        WebDriver driver = WebDriverRunner.driver().getWebDriver();
+        open("https://rozetka.com.ua/");
+        /*WebDriver driver = WebDriverRunner.driver().getWebDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);*/
         //driver.get("https://rozetka.com.ua/");
     }
 
