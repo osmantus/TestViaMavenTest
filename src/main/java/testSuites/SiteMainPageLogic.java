@@ -1,13 +1,13 @@
 package testSuites;
 
-import com.codeborne.selenide.CollectionCondition;
+//import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
+//import static com.codeborne.selenide.Selenide.$$;
 
 public class SiteMainPageLogic {
 

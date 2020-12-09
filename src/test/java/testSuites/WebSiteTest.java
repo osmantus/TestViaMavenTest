@@ -2,10 +2,10 @@ package testSuites;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.WebDriverRunner;
+/*import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.ChromeOptions;*/
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,21 +16,21 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class WebSiteTest {
 
-    /*@BeforeClass
+    @BeforeClass
     public void setUpConfig() {
         Configuration.baseUrl = "https://rozetka.com.ua/";
         Configuration.browser = "chrome";
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
-    }*/
+    }
 
     @BeforeMethod
     public void initTest() {
         //System.setProperty("webdriver.gecko.driver", "C:\\driver\\FirefoxDriver\\geckodriver.exe");
-        Configuration.baseUrl = "https://rozetka.com.ua/";
+        /*Configuration.baseUrl = "https://rozetka.com.ua/";
         Configuration.browser = "chrome";
         Configuration.startMaximized = true;
-        Configuration.timeout = 10000;
+        Configuration.timeout = 10000;*/
 
         Selenide.open("https://rozetka.com.ua/");
 
