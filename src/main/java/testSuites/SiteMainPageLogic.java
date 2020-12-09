@@ -13,7 +13,8 @@ public class SiteMainPageLogic {
 
     //private By categories = By.xpath("//a[@class='menu-categories__link']");
     private By categories2 = By.xpath("//a[@class='main-categories__link']");
-    private By notebooksItem = By.xpath("//a[@class='menu__hidden-title']");
+    //private By notebooksItem = By.xpath("//a[@class='menu__hidden-title']");
+    private By notebooksItem = By.xpath("//a[@class='fat-link fat-link_type_popular']");
 
     private NotebooksPageLogic notebooksPageLogic;
 
