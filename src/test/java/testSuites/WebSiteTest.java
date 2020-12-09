@@ -34,6 +34,8 @@ public class WebSiteTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);*/
         //driver.get("https://rozetka.com.ua/");
+        WebDriver driver = WebDriverRunner.driver().getWebDriver();
+        driver.manage().window().maximize();
     }
 
     @Test
