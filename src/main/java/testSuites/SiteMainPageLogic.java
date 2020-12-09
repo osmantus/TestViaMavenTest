@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class SiteMainPageLogic {
 
-    private By categories = By.xpath("//a[@class='menu-categories__link']");
+    //private By categories = By.xpath("//a[@class='menu-categories__link']");
     private By categories2 = By.xpath("//a[@class='main-categories__link']");
     private By notebooksItem = By.xpath("//a[@class='menu__hidden-title']");
 
