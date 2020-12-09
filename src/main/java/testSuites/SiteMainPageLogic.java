@@ -24,10 +24,14 @@ public class SiteMainPageLogic {
     }
 
     public SiteMainPageLogic categoriesCallingClick() {
-        $$(categories).shouldHave(CollectionCondition.sizeNotEqual(0));
+        $(categories)
+                .shouldBe(visible)
+                .click();
+
+        /*$$(categories).shouldHave(CollectionCondition.sizeNotEqual(0));
         $(categories)
                 .waitUntil(visible, 20)
-                .click();
+                .click();*/
         return this;
     }
 

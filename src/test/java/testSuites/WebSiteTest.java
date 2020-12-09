@@ -30,7 +30,6 @@ public class WebSiteTest {
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;*/
         Selenide.open("https://rozetka.com.ua/");
-        Selenide.executeJavaScript("window.moveTo(0,0); window.resizeTo(1900, 1000);");
         /*WebDriver driver = WebDriverRunner.driver().getWebDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);*/
