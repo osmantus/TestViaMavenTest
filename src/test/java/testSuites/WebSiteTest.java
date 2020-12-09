@@ -16,21 +16,21 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class WebSiteTest {
 
-    @BeforeClass
+    /*@BeforeClass
     public void setUpConfig() {
         Configuration.baseUrl = "https://rozetka.com.ua/";
         Configuration.browser = "chrome";
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
-    }
+    }*/
 
     @BeforeMethod
     public void initTest() {
         //System.setProperty("webdriver.gecko.driver", "C:\\driver\\FirefoxDriver\\geckodriver.exe");
-        /*Configuration.baseUrl = "https://rozetka.com.ua/";
+        Configuration.baseUrl = "https://rozetka.com.ua/";
         Configuration.browser = "chrome";
         Configuration.startMaximized = true;
-        Configuration.timeout = 10000;*/
+        Configuration.timeout = 10000;
 
         Selenide.open("https://rozetka.com.ua/");
 
