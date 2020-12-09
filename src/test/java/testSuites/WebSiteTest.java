@@ -15,6 +15,8 @@ public class WebSiteTest {
     @BeforeMethod
     public void initTest() {
         //System.setProperty("webdriver.gecko.driver", "C:\\driver\\FirefoxDriver\\geckodriver.exe");
+        Configuration.baseUrl = "https://rozetka.com.ua/";
+        Configuration.browser = "chrome";
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
         open("https://rozetka.com.ua/");
