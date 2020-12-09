@@ -19,6 +19,7 @@ public class WebSiteTest {
         Configuration.browser = "chrome";
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
+        Configuration.browserSize = "1920x1080";
     }
 
     @BeforeMethod
