@@ -1,6 +1,7 @@
 package testSuites;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
@@ -9,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class WebSiteTest {
 
@@ -19,7 +20,6 @@ public class WebSiteTest {
         Configuration.browser = "chrome";
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
-        Configuration.browserSize = "1920x1080";
     }
 
     @BeforeMethod
@@ -29,7 +29,8 @@ public class WebSiteTest {
         Configuration.browser = "chrome";
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;*/
-        open("https://rozetka.com.ua/");
+        Selenide.open("https://rozetka.com.ua/");
+        Selenide.executeJavaScript("window.moveTo(0,0); window.resizeTo(screen.width, screen.height);");
         /*WebDriver driver = WebDriverRunner.driver().getWebDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);*/
