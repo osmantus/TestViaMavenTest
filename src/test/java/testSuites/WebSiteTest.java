@@ -10,6 +10,7 @@ public class WebSiteTest {
 
     @BeforeMethod
     public void initTest() {
+        System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver\\chromedriver.exe");
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
         open("https://rozetka.com.ua/");
