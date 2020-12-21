@@ -12,7 +12,7 @@ public class WebSiteTest {
     public void initTest() {
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;
-        open("https://rozetka.com.ua/");
+        open("https://rozetka.com.ua");
     }
 
     @Test
