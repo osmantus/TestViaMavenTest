@@ -4,14 +4,14 @@ import com.codeborne.selenide.Configuration;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class WebSiteTest {
 
     @BeforeMethod
     public void initTest() {
         Configuration.startMaximized = true;
-        Configuration.timeout = 10000;
+        Configuration.timeout = 5000;
         open("https://rozetka.com.ua");
     }
 
